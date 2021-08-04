@@ -1,0 +1,19 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "gmarket",
+  "synchronize": false,
+  "logging": false,
+  "entities": ["entity/*.ts"],
+  "migrationsTableName": "migrations_table",
+  "migrations": ["migrations/*.ts"],
+  "seeds": ["seeds/*{.ts,.js}"],
+  "factories": ["factories/*{.ts,.js}"],
+  "cli": {
+    "entitiesDir": "entity",
+    "migrationsDir": "migrations"
+  }
+}
